@@ -18,7 +18,7 @@ public class PlayerMultimediale {
         Media[] elementi = new Media[5];
         
         for (int i = 0; i < elementi.length; i++) {
-            int tipo = inputUtente.leggiNumeroTipo(
+            int tipo = inputUtente.leggiNumero(
                     "Inserisci il tipo di elemento (1 = Audio, 2 = Video, 3 = Immagine):", 1, 3);
             String titolo = inputUtente.leggiStringa("Inserisci il titolo:");
             
@@ -43,7 +43,7 @@ public class PlayerMultimediale {
         
         int scelta;
         do {
-            scelta = inputUtente.leggiNumeroTipo("Quale elemento vuoi eseguire? (1-5, 0 per uscire)", 0, 5);
+            scelta = inputUtente.leggiNumero("Quale elemento vuoi eseguire? (1-5, 0 per uscire)", 0, 5);
             if (scelta >= 1 && scelta <= 5) {
                 Media elemento = elementi[scelta - 1];
                 elemento.esegui();

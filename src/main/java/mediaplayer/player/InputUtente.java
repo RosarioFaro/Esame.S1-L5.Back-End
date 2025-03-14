@@ -20,7 +20,7 @@ public class InputUtente {
         return valore;
     }
     
-    public int leggiNumeroTipo(String messaggio, int min, int max) {
+    public int leggiNumero(String messaggio, int min, int max) {
         int valore;
         do {
             valore = leggiIntero(messaggio);
