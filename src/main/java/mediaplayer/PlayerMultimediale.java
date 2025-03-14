@@ -43,6 +43,9 @@ public class PlayerMultimediale {
         
         int scelta;
         do {
+            for (int i = 0; i < elementi.length; i++) {
+                System.out.println((i + 1) + ": " + elementi[i].getTitolo());
+            }
             scelta = inputUtente.leggiNumero("Quale elemento vuoi eseguire? (1-5, 0 per uscire)", 0, 5);
             if (scelta >= 1 && scelta <= 5) {
                 Media elemento = elementi[scelta - 1];

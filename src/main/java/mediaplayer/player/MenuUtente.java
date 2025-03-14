@@ -17,16 +17,11 @@ public class MenuUtente {
         while (inEsecuzione) {
             System.out.println("Cosa vuoi fare?");
             if (elemento instanceof Audio) {
-                System.out.println("1: Alza volume");
-                System.out.println("2: Abbassa volume");
+                System.out.println("1: Alza volume - 2: Abbassa volume");
             } else if (elemento instanceof Video) {
-                System.out.println("1: Alza volume");
-                System.out.println("2: Abbassa volume");
-                System.out.println("3: Aumenta luminosità");
-                System.out.println("4: Diminuisci luminosità");
+                System.out.println("1: Alza volume - 2: Abbassa volume - 3: Aumenta luminosità - 4: Diminuisci luminosità");
             } else if (elemento instanceof Immagine) {
-                System.out.println("3: Aumenta luminosità");
-                System.out.println("4: Diminuisci luminosità");
+                System.out.println("3: Aumenta luminosità - 4: Diminuisci luminosità");
             }
             System.out.println("0: Torna al menu principale");
             
